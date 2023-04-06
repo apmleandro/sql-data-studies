@@ -2,6 +2,7 @@ from sqlalchemy import create_engine
 from decouple import config 
 import os
 import pandas as pd
+from tqdm import tqdm
 
 HOST     = config('HOST')
 DATABASE = config('DATABASE')
@@ -21,7 +22,7 @@ engine = create_engine(conn_string)
 
 directory = r"C:\Users\apmle\OneDrive\Documents\Bootcamp\SQL-STUDIES\sql-data-studies\data\olist"
 
-for filename in os.listdir(directory):
+for filename in tqdm(os.listdir(directory)):
     f = os.path.join(directory, filename)  
     if os.path.isfile(f):
         print(f)
