@@ -20,7 +20,7 @@ conn_string = f'postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}'
 
 engine = create_engine(conn_string)
 
-directory = r"C:\Users\apmle\OneDrive\Documents\Bootcamp\SQL-STUDIES\sql-data-studies\data\olist"
+directory = r""
 
 for filename in tqdm(os.listdir(directory)):
     f = os.path.join(directory, filename)  
