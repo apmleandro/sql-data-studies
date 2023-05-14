@@ -1,2 +1,2 @@
 # sql-data-studies
-Analysis of selected databases mostly using postgres
+Analysis of selected databases mostly using postgres and sqlite
